@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jls.Tools.Testing.MoapiUI", "Jls.Tools.Testing.MoapiUI\Jls.Tools.Testing.MoapiUI.csproj", "{525044DC-85AC-4D8F-9186-142320B066CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jls.Tools.Testing.MoapiClient", "Jls.Tools.Testing.MoapiClient\Jls.Tools.Testing.MoapiClient.csproj", "{82C80365-19E9-4700-907D-36B5F5DAA8D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525044DC-85AC-4D8F-9186-142320B066CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525044DC-85AC-4D8F-9186-142320B066CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525044DC-85AC-4D8F-9186-142320B066CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525044DC-85AC-4D8F-9186-142320B066CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C80365-19E9-4700-907D-36B5F5DAA8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C80365-19E9-4700-907D-36B5F5DAA8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C80365-19E9-4700-907D-36B5F5DAA8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C80365-19E9-4700-907D-36B5F5DAA8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2274971-DA5F-4B05-AF29-5B3C2FB6432A}
+	EndGlobalSection
+EndGlobal

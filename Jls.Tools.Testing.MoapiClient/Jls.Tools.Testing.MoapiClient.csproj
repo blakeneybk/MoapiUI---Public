@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82C80365-19E9-4700-907D-36B5F5DAA8D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jls.Tools.Testing.MoapiClient</RootNamespace>
+    <AssemblyName>Jls.Tools.Testing.MoapiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiMapSource.cs" />
+    <Compile Include="Configuration\IMoapiSettings.cs" />
+    <Compile Include="Configuration\ISearchRequest.cs" />
+    <Compile Include="Diagnostics\Logging\ConsoleLogger.cs" />
+    <Compile Include="Diagnostics\Logging\DebugLogger.cs" />
+    <Compile Include="Diagnostics\Logging\ILogger.cs" />
+    <Compile Include="Geography\GeoPoint.cs" />
+    <Compile Include="Geography\GeoRectangle.cs" />
+    <Compile Include="Geography\GeoSize.cs" />
+    <Compile Include="IMapSource.cs" />
+    <Compile Include="MoapiClientException.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Broker.cs" />
+    <Compile Include="Models\BrokerType.cs" />
+    <Compile Include="Models\CriteriaType.cs" />
+    <Compile Include="Models\CriterionRange.cs" />
+    <Compile Include="Models\Designation.cs" />
+    <Compile Include="Models\DesignationCollection.cs" />
+    <Compile Include="Models\Feature.cs" />
+    <Compile Include="Models\FeatureCollection.cs" />
+    <Compile Include="Models\FeatureType.cs" />
+    <Compile Include="Models\IListing.cs" />
+    <Compile Include="Models\IMultipleListingService.cs" />
+    <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\LanguageCollection.cs" />
+    <Compile Include="Models\Listing.cs" />
+    <Compile Include="Models\ListingActivity.cs" />
+    <Compile Include="Models\ListingActivityType.cs" />
+    <Compile Include="Models\ListingBase.cs" />
+    <Compile Include="Models\ListingStatus.cs" />
+    <Compile Include="Models\MediaLink.cs" />
+    <Compile Include="Models\MediaType.cs" />
+    <Compile Include="Models\MultipleListingService.cs" />
+    <Compile Include="Models\Office.cs" />
+    <Compile Include="Models\PhoneNumber.cs" />
+    <Compile Include="Models\PresentationOptions.cs" />
+    <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\PropertyType.cs" />
+    <Compile Include="Models\SchoolDistrict.cs" />
+    <Compile Include="Models\SearchOptionType.cs" />
+    <Compile Include="Models\SearchRequest.cs" />
+    <Compile Include="Models\SearchResponse.cs" />
+    <Compile Include="Models\SessionContext.cs" />
+    <Compile Include="Models\SoldData.cs" />
+    <Compile Include="Models\Tax.cs" />
+    <Compile Include="Models\TaxType.cs" />
+    <Compile Include="Models\TagInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
